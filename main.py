@@ -87,12 +87,12 @@ elif int(type) == 2:
         list_M.append(float(input()))
     correct(list_M)
 
-    print("\n直径を5回いれて")
+    print("\n外径を5回いれて")
     for i in range(0,5):
         list_D.append(float(input()))
     correct(list_D)
 
-    print("\n厚さを5回いれて")
+    print("\n厚みを5回いれて")
     for i in range(0,5):
         list_t.append(float(input()))
     correct(list_t)
@@ -141,8 +141,8 @@ elif int(type) == 2:
 
     print("\n---結果---")
     print("\n質量の平均值は" + str(aver_M) + "\n質量の誤差は" + str(averdelta_M))
-    print("\n直径の平均值は" + str(aver_D) + "\n直径の誤差は" + str(averdelta_D))
-    print("\n厚さの平均值は" + str(aver_t) + "\n厚さの誤差は" + str(averdelta_t))
+    print("\n外径の平均值は" + str(aver_D) + "\n外径の誤差は" + str(averdelta_D))
+    print("\n厚みの平均值は" + str(aver_t) + "\n厚みの誤差は" + str(averdelta_t))
     print("\n長さの平均值は" + str(aver_L) + "\n長さの誤差は" + str(averdelta_L))
 
     aver_V = math.pi * (aver_D - aver_t) * aver_t * aver_L / 1000
